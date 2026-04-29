@@ -989,7 +989,7 @@
 
     // ─── Reports ─────────────────────────────────────────────────────────────────
     function renderReports() {
-      const subjects = ['Mathematics', 'Physics', 'Data Structures', 'Operating Systems', 'DBMS'];
+      const subjects = ['C PROGRAMMING', 'DBMS', 'Data Structures', 'Operating Systems', 'SOFTWARE ENGIENERING'];
       const rates = [82, 76, 88, 71, 65];
       document.getElementById('reportsCard').innerHTML = `
     <div class="card-title">Subject-wise Attendance Rate</div>
@@ -1104,7 +1104,7 @@ Keep it under 100 words. Formal but warm tone. Include a call to action.`;
       if (!getKey()) return;
       const excuse = prompt('Enter student excuse for absence:', 'I was sick with fever and visited the hospital');
       if (!excuse) return;
-      const studentName = prompt('Student name:', 'Bilal Ahmed');
+      const studentName = prompt('Student name:', 'student 1');
       loadingBubble();
       try {
         const prompt2 = `A student named ${studentName} submitted this excuse for absence: "${excuse}"
