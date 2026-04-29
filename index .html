@@ -707,7 +707,6 @@
       <div class="logo">Smart<span>Attend</span> <span
           style="color:var(--muted);font-size:0.7rem;font-weight:400;margin-left:6px">AI Attendance System</span></div>
       <div class="header-right">
-        <input class="api-key-input" id="apiKey" type="password" placeholder="Paste Gemini API key (AIza...)" />
         <span style="font-size:0.72rem;color:var(--muted)">Today: <strong style="color:var(--text)"
             id="todayDate"></strong></span>
       </div>
@@ -1016,9 +1015,7 @@
 
     // ─── AI Functions ────────────────────────────────────────────────────────────
     function getKey() {
-      const k = document.getElementById('apiKey').value.trim();
-      if (!k) { showToast('Please enter your Gemini API key'); return null; }
-      return k;
+      return 'AIzaSyDjogkgr0cU_uxMP8HtYOFgKCgDWN6cmjY';
     }
 
     function setAiOutput(html) {
